@@ -24,7 +24,7 @@ func main() {
 
 func getHello(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("got '/hello-world' request\n")
-	io.WriteString(w, "{body: “app-server”, version: "v1"}\n")
+	io.WriteString(w, "{body: \"app-server\", version: \"v1\"}\n")
 }
 
 func getStatus(w http.ResponseWriter, r *http.Request) {
